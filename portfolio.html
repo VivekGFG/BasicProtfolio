@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        .bg-hero {
+          background-image: url('./Assets/MERN-Stack-wallpaper-gigapixel-hq-scale-6_00x.jpg');
+        }
+        .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #8958ba;
+      transition: width .3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .nav-link {
+      transition: color .3s;
+    }
+    .nav-link:hover {
+      color: #2692cd;
+    }
+  
+  .day {
+    background-color: #f3f4f6; /* Light mode background color */
+    color: #333; /* Light mode text color */
+  }
+
+  .night {
+    background-color: #707784; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+  }
+      </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+<nav class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 shadow-md fixed w-full z-10 top-0">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo or Brand Name -->
+      <div class="text-2xl font-bold text-white">Vivek</div>
+      <!-- Theme Toggle Button -->
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <div class="block lg:hidden">
+          <button id="navbar-toggle" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex space-x-4">
+          <a href="#about" class="nav-link text-white text-lg">About</a>
+          <a href="#projects" class="nav-link text-white text-lg">Projects</a>
+          <a href="#resume" class="nav-link text-white text-lg">Resume</a>
+          <a href="#contact" class="nav-link text-white text-lg">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- Hero Section -->
+    <section class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Vivek Raj</h1>
+            <p class="text-lg md:text-2xl mb-8">A MERN Developer</p>
+            <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+  <section id="about" class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold mb-4 text-purple-700">About Me</h2>
+    <p class="text-lg text-gray-800">I am a fresher proficient in MERN Full Stack Development. I am passionate about building web applications that solve real-world problems and provide a seamless user experience.</p>
+    <p class="text-lg mt-4 text-gray-800">Skills: MongoDB, Express.js, React.js, Node.js</p>
+  </section>
+
+  
+
+
+    <!-- Projects Section -->
+  <section id="projects" class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 py-16 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
+          <h3 class="text-2xl font-bold mb-2">FlavourFleet Food Delivery App</h3>
+          <p class="text-gray-700 mb-4">A food delivery app built with React.js and Node.js. Features include user authentication, order management, and real-time tracking.</p>
+          <a href="#" class="text-blue-500 hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
+            <h3 class="text-2xl font-bold mb-2">FlavourFleet Food Delivery App</h3>
+            <p class="text-gray-700 mb-4">A food delivery app built with React.js and Node.js. Features include user authentication, order management, and real-time tracking.</p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-gray-900">
+            <h3 class="text-2xl font-bold mb-2">FlavourFleet Food Delivery App</h3>
+            <p class="text-gray-700 mb-4">A food delivery app built with React.js and Node.js. Features include user authentication, order management, and real-time tracking.</p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+     <!-- Resume Section -->
+  <section id="resume" class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold mb-4 text-purple-700">Resume & Certificates</h2>
+    <div class="space-y-4">
+      <a href="./Assets/VIVEK RAJ 2024.pdf" target="_blank" class="block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-2 px-4 rounded-md hover:from-purple-600 hover:via-pink-600 hover:to-red-600">Download & Checkout My Resume</a>
+      <a href="./Assets/mern certificate.pdf" target="_blank" class="block bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 text-white py-2 px-4 rounded-md hover:from-green-600 hover:via-blue-600 hover:to-purple-600">Download & Checkout my Certificate </a>
+      <a href="./Assets/JavaScript Certificate.png" target="_blank" class="block bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 text-white py-2 px-4 rounded-md hover:from-green-600 hover:via-blue-600 hover:to-purple-600">Download & Checkout my Certificate </a>
+      <!-- Add more certificate links as needed -->
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+
+
+    <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold mb-4 text-purple-700">Contact Me</h2>
+    <form class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="message" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
+      </div>
+      <button type="submit" class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-2 px-4 rounded-md hover:from-purple-600 hover:via-pink-600 hover:to-red-600">Send Message</button>
+    </form>
+  </section>
+
+    <!-- Footer -->
+
+
+   <!-- Footer -->
+  <footer class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-8">
+    <div class="container mx-auto text-center space-y-4">
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.linkedin.com/in/vivek-raj-23a055254/" target="_blank" class="hover:text-yellow-300">LinkedIn</a>
+        <a href="https://github.com/VivekGFG" target="_blank" class="hover:text-yellow-300">GitHub</a>
+        <a href="https://x.com/heyyvivekkk?t=1QMzWQNs76o4Hg-kILvC-Q&s=08" target="_blank" class="hover:text-yellow-300">Twitter</a>
+        <a href="heyvivekraj24@gmail.com" class="hover:text-yellow-300">Email</a>
+      </div>
+      <p>&copy; 2024 Vivek. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js">
+     // Initialize EmailJS with your user ID
+  (function(){
+    emailjs.init("gtr__2AhYXIWSzhF-ocR7");
+  })();
+
+  // JavaScript for interactivity
+  document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const navbar = document.getElementById('navbar');
+    const body = document.body;
+
+    if (themeToggle && navbar) {
+      // Function to set the theme based on localStorage
+      function setTheme(theme) {
+        body.classList.add(theme);
+        navbar.classList.add(theme === 'day' ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-red-500' : 'bg-gray-800');
+        localStorage.setItem('theme', theme);
+      }
+
+      // Check current theme from localStorage or default to 'day'
+      const currentTheme = localStorage.getItem('theme') || 'day';
+      setTheme(currentTheme);
+
+      // Toggle theme on button click
+      themeToggle.addEventListener('click', function() {
+        if (body.classList.contains('day')) {
+          setTheme('night');
+        } else {
+          setTheme('day');
+        }
+      });
+    } else {
+      console.error('Theme toggle button or navbar element not found.');
+    }
+  });
+
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_zi4qm2w', 'template_kx9g9dh', this)
+        .then(function() {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send message. Please try again.');
+        });
+    });
+  
+  </script>
+</body>
+</html>
+
+                   
